@@ -1,0 +1,94 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+}
+
+*::selection {
+	background-color: orange;
+}
+
+header {
+	background-color: yellow;
+}
+
+.container {
+	float: left;
+	width: 60%;
+	height: 100%;
+}
+
+.container main {
+	box-sizing: border-box;
+	float: right;
+	width: 79%;
+	background-color: green;
+	padding-left: 5%;
+	margin-left: 1%;
+	height: 100%;
+}
+
+.container aside {
+	box-sizing: border-box;
+	float: left;
+	background-color: blue;
+	width: 20%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.container + aside {
+	float: right;
+	background-color: orange;
+	width: 39%;
+	margin-left: 1%;
+	height: 100%;
+}
+
+footer {
+	float: left;
+	width: 100%;
+	margin-top: 10px;
+	clear: both;
+	background-color: gray;
+}
+
+ul li {
+	display: inline;
+}
+
+ul li img + a {
+	color: red;
+}
+
+ul li:last-child a:hover {
+	display: inline-block;
+	color: green;
+	-webkit-animation: wobble .5s ease-in-out infinite;
+	animation: wobble .5s ease-in-out infinite;
+}
+
+main form input:invalid {
+	background-color: red;
+}
+
+
+@-webkit-keyframes wobble { 
+	33% { 
+		-webkit-transform:rotate(2deg); 
+	} 
+	66% { 
+		-webkit-transform:rotate(-2deg); 
+	} 
+}
+
+@keyframes wobble { 
+	33% { 
+		transform:rotate(2deg); 
+	} 
+	66% { 
+		transform:rotate(-2deg); 
+	} 
+}

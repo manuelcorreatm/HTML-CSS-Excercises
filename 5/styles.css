@@ -1,0 +1,34 @@
+
+
+ul li {
+	display: inline;
+}
+
+ul li img + a {
+	color: red;
+}
+
+ul li:last-child a:hover {
+	display: inline-block;
+	color: green;
+	-webkit-animation: wobble .5s ease-in-out infinite;
+	animation: wobble .5s ease-in-out infinite;
+}
+
+@-webkit-keyframes wobble { 
+	33% { 
+		-webkit-transform:rotate(2deg); 
+	} 
+	66% { 
+		-webkit-transform:rotate(-2deg); 
+	} 
+}
+
+@keyframes wobble { 
+	33% { 
+		transform:rotate(2deg); 
+	} 
+	66% { 
+		transform:rotate(-2deg); 
+	} 
+}

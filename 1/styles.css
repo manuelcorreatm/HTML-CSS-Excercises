@@ -1,0 +1,10 @@
+
+
+.container {
+	display: flex;
+}
+
+.container p {
+	background-color: #666;
+	flex: 1 1 100px;
+}
